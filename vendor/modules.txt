@@ -1,0 +1,2 @@
+# gocv.io/x/gocv v0.24.0
+gocv.io/x/gocv

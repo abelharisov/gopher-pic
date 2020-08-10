@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="388d58f6-f744-4dda-8782-0496b894bff4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gopher-pic.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmd/tool/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/gocv.io/x/gocv/.astylerc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/gocv.io/x/gocv/.dockerignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/gocv.io/x/gocv/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/gocv.io/x/gocv/.travis.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/gocv.io/x/gocv/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/gocv.io/x/gocv/CODE_OF_CONDUCT.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/gocv.io/x/gocv/CONTRIBUTING.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/gocv.io/x/gocv/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/gocv.io/x/gocv/LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/gocv.io/x/gocv/Makefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/gocv.io/x/gocv/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/gocv.io/x/gocv/ROADMAP.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/gocv.io/x/gocv/appveyor.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/gocv.io/x/gocv/appveyor_build_opencv.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/gocv.io/x/gocv/asyncarray.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/gocv.io/x/gocv/asyncarray.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/gocv.io/x/gocv/asyncarray.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/gocv.io/x/gocv/calib3d.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/gocv.io/x/gocv/calib3d.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/gocv.io/x/gocv/calib3d.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/gocv.io/x/gocv/calib3d_string.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/gocv.io/x/gocv/cgo.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/gocv.io/x/gocv/codecov.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/gocv.io/x/gocv/core.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/gocv.io/x/gocv/core.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/gocv.io/x/gocv/core.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/gocv.io/x/gocv/core_string.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/gocv.io/x/gocv/dnn.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/gocv.io/x/gocv/dnn.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/gocv.io/x/gocv/dnn.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/gocv.io/x/gocv/dnn_async_openvino.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/gocv.io/x/gocv/dnn_ext.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/gocv.io/x/gocv/dnn_string.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/gocv.io/x/gocv/env.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/gocv.io/x/gocv/env.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/gocv.io/x/gocv/features2d.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/gocv.io/x/gocv/features2d.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/gocv.io/x/gocv/features2d.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/gocv.io/x/gocv/features2d_string.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/gocv.io/x/gocv/go.mod" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/gocv.io/x/gocv/gocv.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/gocv.io/x/gocv/highgui.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/gocv.io/x/gocv/highgui.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/gocv.io/x/gocv/highgui_gocv.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/gocv.io/x/gocv/highgui_string.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/gocv.io/x/gocv/imgcodecs.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/gocv.io/x/gocv/imgcodecs.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/gocv.io/x/gocv/imgcodecs.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/gocv.io/x/gocv/imgproc.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/gocv.io/x/gocv/imgproc.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/gocv.io/x/gocv/imgproc.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/gocv.io/x/gocv/imgproc_colorcodes.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/gocv.io/x/gocv/imgproc_colorcodes_string.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/gocv.io/x/gocv/imgproc_string.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/gocv.io/x/gocv/mat_noprofile.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/gocv.io/x/gocv/mat_profile.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/gocv.io/x/gocv/objdetect.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/gocv.io/x/gocv/objdetect.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/gocv.io/x/gocv/objdetect.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/gocv.io/x/gocv/svd.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/gocv.io/x/gocv/svd.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/gocv.io/x/gocv/svd.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/gocv.io/x/gocv/travis_build_opencv.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/gocv.io/x/gocv/version.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/gocv.io/x/gocv/version.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/gocv.io/x/gocv/version.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/gocv.io/x/gocv/video.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/gocv.io/x/gocv/video.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/gocv.io/x/gocv/video.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/gocv.io/x/gocv/videoio.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/gocv.io/x/gocv/videoio.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/gocv.io/x/gocv/videoio.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/gocv.io/x/gocv/videoio_string.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/gocv.io/x/gocv/win_build_opencv.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/modules.txt" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
+  </component>
+  <component name="GOROOT" path="/usr/local/Cellar/go/1.14.4/libexec" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="false" />
+  </component>
+  <component name="ProjectId" id="1fuxvPxMvDfeQiUVqiYJMGeTOwX" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="go.sdk.automatically.set" value="true" />
+    <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/cmd/tool" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>true</integration-enabled>
+  </component>
+</project>
