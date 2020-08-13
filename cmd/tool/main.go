@@ -2,7 +2,9 @@ package main
 
 import (
 	"gocv.io/x/gocv"
+	"image"
 	"log"
+	"math"
 	"os"
 )
 
@@ -26,44 +28,74 @@ func main() {
 	}
 
 	log.Println("init detector")
-
 	hog := gocv.NewHOGDescriptor()
 	if err := hog.SetSVMDetector(gocv.HOGDefaultPeopleDetector()); err != nil {
 		log.Fatal("detector init failed")
 	}
 
-	log.Println("detector inited")
+	log.Println("resize source image")
+	maxSize := math.Max(float64(srcImage.Cols()), float64(srcImage.Rows()))
+	scale := 1.0
+	srcResized := srcImage
+	if maxSize > 500 {
+		scale = 1.0 / (maxSize / 500.0)
+		srcResized = gocv.NewMat()
+		gocv.Resize(srcImage, &srcResized, image.Point{}, scale, scale, gocv.InterpolationLinear)
+	}
+
+	log.Println("scale: ", scale, " resized size: ", srcResized.Rows(), "x", srcResized.Cols())
 
 	log.Println("detecting human")
-
-	rects := hog.DetectMultiScale(srcImage)
+	rects := hog.DetectMultiScaleWithParams(
+		srcResized,
+		0,
+		image.Point{0, 0},
+		image.Point{0, 0},
+		1.05,
+		2.0,
+		false,
+	)
 	if len(rects) == 0 {
 		log.Fatal("no human on source image")
 	}
-	union := rects[0]
+	humanRect := rects[0]
 	for _, rect := range rects {
-		rect.Union(union)
+		rect.Union(humanRect)
 	}
+	if !(math.Abs(scale-1.0) < 1e-9) {
+		humanRect = image.Rect(
+			int(float64(humanRect.Min.X)*(1/scale)),
+			int(float64(humanRect.Min.Y)*(1/scale)),
+			int(float64(humanRect.Max.X)*(1/scale)),
+			int(float64(humanRect.Max.Y)*(1/scale)),
+		)
+	}
+	log.Println("human rect found", humanRect)
 
-	log.Println("human rect found", union)
+	ratio := float64(humanRect.Dy()) / float64(gopherImage.Rows())
+	needSize := float64(humanRect.Dy()) / 2.0
+	gopherScale := 1.0
+	if !(math.Abs(ratio-1) < 1e-9) {
+		gopherScale = needSize / float64(gopherImage.Rows())
+	}
+	gocv.Resize(gopherImage, &gopherImage, image.Point{}, gopherScale, gopherScale, gocv.InterpolationCubic)
 
-	// todo
-	// заскейлить исходное изображение до 1000 px с любой стороны
-	// заскейлить гофера, что бы он занимал 1/5 высоты области с человеком
-	// разместить гофера на уровне ног
+	log.Println("gopher scale and new size", gopherScale, gopherImage.Size())
 
 	layers := gocv.Split(gopherImage)
 	rgb := layers[0:3]
 	mask := layers[3]
 	gocv.Merge(rgb, &gopherImage)
 
-	dst := srcImage.RowRange(0, gopherImage.Rows())
-	dst = dst.ColRange(union.Max.X, union.Max.X+gopherImage.Cols())
+	dst := srcImage.RowRange(
+		humanRect.Max.Y-gopherImage.Rows(),
+		humanRect.Max.Y,
+	)
+	dst = dst.ColRange(
+		humanRect.Max.X-humanRect.Dx()/2,
+		humanRect.Max.X-humanRect.Dx()/2+gopherImage.Cols(),
+	)
 	gopherImage.CopyToWithMask(&dst, mask)
 
 	gocv.IMWrite(out, srcImage)
-
-	//window := gocv.NewWindow("Hello")
-	//window.IMShow(dst)
-	//window.WaitKey(1)
 }
